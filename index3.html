@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles3.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey form</h1>
+        <p id="description">Institute Survey</p>
+    </header>
+    <main>
+        <form action="mailto:gairolashivansh@gmail.com" method="post" enctype="text/plain" id="survey-form">
+            <label for="name" id="name-label">* Name:</label>
+            <input id="name" type="text" placeholder="enter your name" required><br>
+            <label for="email" id="email-label">*E-mail</label>
+            <input id="email" type="text" placeholder="enter your email" required><br>
+            <label for="time" id="number-label">*Time period</label>
+            <input id="time" type="number" placeholder="how many years you have been here" min=1 max=15 required><br>
+
+
+            <p>Please rate the following aspects as per your experience</p><br>
+            <label for="class-size">The classes size was accurate :</label>
+            <fieldset id="class-size">
+                <label for="agreed-1">Agree</label>
+                <input type="radio" id="agreed-1" name="select-1" value="agree-1"><br>
+                <label for="disagreed-1">Disagree</label>
+                <input type="radio" id="disagreed-1" name="select-1" value="disagree-1"><br>
+                <label for="notsure-1">Neutral</label>
+                <input type="radio" id="notsure-1" name="select-1" value="neutral-1"><br>
+            </fieldset><br><br>
+
+            <label for="class-time">The classes started and ended on time :</label>
+            <fieldset id="class-time">
+                <label for="agreed-2">Agree</label>
+                <input type="radio" id="agreed-2" name="select-2" value="agree-2"><br>
+                <label for="disagreed-2">Disagree</label>
+                <input type="radio" id="disagreed-2" name="select-2" value="disagree-2"><br>
+                <label for="notsure-2">Neutral</label>
+                <input type="radio" id="notsure-2" name="select-2" value="neutral-2"><br>
+            </fieldset><br><br>
+
+            <label for="accuracy">The classes size was accurate :</label>
+            <fieldset id="accuracy">
+                <label for="agreed-3">Agree</label>
+                <input type="radio" id="agreed-3" name="select-3" value="agree-3"><br>
+                <label for="disagreed-3">Disagree</label>
+                <input type="radio" id="disagreed-3" name="select-3" value="disagree-3"><br>
+                <label for="notsure-3">Neutral</label>
+                <input type="radio" id="notsure-3" name="select-3" value="neutral-3"><br>
+            </fieldset><br><br>
+
+            <label for="knowlwdge">The classes increased my knowledge of subject matter :</label>
+            <fieldset id="knowlwdge">
+                <label for="agreed-4">Agree</label>
+                <input type="radio" id="agreed-4" name="select-4" value="agree-4"><br>
+                <label for="disagreed-4">Disagree</label>
+                <input type="radio" id="disagreed-4" name="select-4" value="disagree-4"><br>
+                <label for="notsure-4">Neutral</label>
+                <input type="radio" id="notsure-4" name="select-4" value="neutral-4"><br>
+            </fieldset><br><br>
+
+            <label for="materials">The textbook and learning materials were useful :</label>
+            <fieldset id="materials">
+                <label for="agreed-5">Agree</label>
+                <input type="radio" id="agreed-5" name="select-5" value="agree-5"><br>
+                <label for="disagreed-5">Disagree</label>
+                <input type="radio" id="disagreed-5" name="select-5" value="disagree-5"><br>
+                <label for="notsure-5">Neutral</label>
+                <input type="radio" id="notsure-5" name="select-5" value="neutral-5"><br>
+            </fieldset><br><br>
+
+            <label for="instructor">The techer were helpful and available for students outside the class :</label>
+            <fieldset id="instructor">
+                <label for="agreed-6">Agree</label>
+                <input type="radio" id="agreed-6" name="select-6" value="agree-6"><br>
+                <label for="disagreed-6">Disagree</label>
+                <input type="radio" id="disagreed-6" name="select-6" value="disagree-6"><br>
+                <label for="notsure-6">Neutral</label>
+                <input type="radio" id="notsure-6" name="select-6" value="neutral-6"><br>
+            </fieldset><br><br>
+
+            <label for="concepts">The teacher explained concepts very well :</label>
+            <fieldset id="concepts">
+                <label for="agreed-7">Agree</label>
+                <input type="radio" id="agreed-7" name="select-7" value="agree-7"><br>
+                <label for="disagreed-7">Disagree</label>
+                <input type="radio" id="disagreed-7" name="select-7" value="disagree-7"><br>
+                <label for="notsure-7">Neutral</label>
+                <input type="radio" id="notsure-7" name="select-7" value="neutral-7"><br>
+            </fieldset><br><br>
+
+            <label for="changes">Choose among the following :</label>
+            <fieldset id="changes">
+                <label for="option-1"><input type="checkbox" name="checks" id="option-1" value="environment">Physical
+                    classroom environment was clean.</label><br>
+                <label for="option-2"><input type="checkbox" name="checks" id="option-2" value="Library">Library and
+                    on-site computers were consistently made available.</label><br>
+                <label for="option-3"><input type="checkbox" name="checks" id="option-3" value="quality">The overall
+                    quality of the clases was excellent.</label><br>
+                <label for="option-4"><input type="checkbox" name="checks" id="option-4" value="material">Test and
+                    assignment were based on material in class.</label><br>
+                <label for="option-5"><input type="checkbox" name="checks" id="option-5" value="recommendation">I would
+                    recomend these classes to other students.</label><br>
+            </fieldset>
+            <section id="box">
+            <label for="drop">How likely are you to recomend our institute to a friend or colleague</label>
+            <select id="drop">
+                <option value="" disabled selected>select an option</option>
+                <option value="very-likely">Very-likely</option>
+                <option value="somewhat-likely">Somewhat-likely</option>
+                <option value="unsure">Unsure</option>
+                <option value="not-very-likely">Not very likely</option>
+                <option value="not-likely">Not likely</option>
+            </select>
+            </section><br><br>
+
+            
+            <label for="reason">If not why?</label>
+            <input style="height:80px;" id="reason" type="text" placeholder="write here" size="65px"><br><br><br>
+
+            <label for="satisfaction">Any suggestions to work on?</label>
+            <input style="height:80px;" id="satisfaction" type="text" placeholder="write here" size="60px"><br><br><br>
+
+            <center><input type="submit"></center>
+        </form>
+    </main>
+</body>
+
+</html>
